@@ -14,7 +14,6 @@ The materials include:
 
 
 ## Available Datasets for V-NLIs
----
 * [Quda](https://freenli.github.io/quda/)
 
 Quda aims to help V-NLIs recognize analytic tasks from free-form natural language by training and evaluating cutting-edge multi-label classification models. The dataset contains 14035 diverse user queries, and each is annotated with one or multiple analytic tasks. Quda achieves this goal by first gathering seed queries with data analysts and then employing extensive crowd force for paraphrase generation and validation. This work is the first attempt to construct a large-scale corpus for recognizing analytic tasks.
