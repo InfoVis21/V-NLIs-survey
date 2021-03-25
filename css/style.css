@@ -1,0 +1,53 @@
+body {
+  /*padding-top: 50%;*/
+  background-color: #ffffff;
+}
+
+/*@media (min-width: 992px) {
+  body {
+    padding-top: 5%;
+  }
+}*/
+
+#pageHeader{
+	background-color: #ffffffee;
+	color: rgb(0, 0, 0);
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+#mainBody{
+	margin-top: 1.5%;
+	text-align: justify;
+	font-family: Cairo,Calibri;
+}
+
+#authorList a{
+	color: black;
+}
+#authorList a:hover{
+	color: #ffffff;
+}
+
+#githubLink{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	cursor: pointer;
+}
+#githubLink:hover{
+	background-color: gray;
+}
+
+li {
+    margin-bottom: 1%;
+}
+
+.footer{
+	margin-top: 2.5%;
+	width: 100%;
+	background-color: #ffffff;
+	padding: .75%;
+	/*height: 150px;*/
+	color: rgb(255, 255, 255);
+	font-size: small;
+}

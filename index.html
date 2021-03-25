@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>A Survey of Natural Language Interfaces for Data Visualization</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+    integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="pageHeader" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <h3>A Survey of Natural Language Interfaces for Data Visualization</h3>
+      <h5><a id="githubLink" href="https://github.com/nlvcorpus/nlvcorpus.github.io"><i
+            class="fab fa-github"></i>GitHub</a>
+      </h5>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div id="mainBody" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          Utilizing Visualization-oriented Natural Language Interfaces (V-NLIs) as a complementary input modality to
+          direct manipulation for visual analytics can provide an engaging user experience. It allows users to only
+          focus on the questions about data, rather than how to operate the interface to visualization tools. However,
+          designing practical V-NLIs is a challenging task due to the complex and ambiguous nature of human language,
+          the difficulty of maintaining context in conversational flow, the hardness to tell fascinating data stories,
+          and lack of discoverability. In the past two decades, leveraging advanced natural language processing
+          technologies, various V-NLIs have been developed both within academic research and commercial software,
+          especially in recent years. In this project, we conducted a comprehensive review of the existing V-NLIs. Based
+          on the field challenge type they deal with, we sorted out related works and analyzed their characteristics. In
+          addition, we designed a set of test cases for V-NLIs and evaluated four state-of-the-art systems to examine
+          whether we are ready to ask our data freely, along with discovering problems not found yet. Finally, we shed
+          light on several promising directions for future work in the community.
+
+
+        </p>
+        <p>
+          This website is a supplementary material for our paper, providing details of our survey and evaluation.
+        </p>
+      </div>
+    </div>
+
+    <hr />
+    <div>
+      <h5><i class="fa fa-table"></i> Survry (Click to <a
+          href="https://docs.google.com/spreadsheets/d/1GMWktNGJCwC8U1dvT0gMggVRRYqN3uL28zjVDbxYJOg/edit?usp=sharing"
+          target="blank">Google Sheet</a>)</h5>
+      <div style="width: 100%;height: 600px;">
+        <iframe id="datasetPreview"
+          src="https://docs.google.com/spreadsheets/d/1Y6yVs5HLq-V2egHIafGJMaUVnQSB385joDwgt9rID_M/edit?usp=sharing&amp;single=true&amp;widget=true&amp;headers=false"
+          width="100%" height="100%"></iframe>
+      </div>
+      <br>
+      <p>
+        The above table lists the details of related works, including NLP libraries applied in the system, chart types
+        supported, visualization recommendation algorithm adopted, and various characteristics in V-NLIs.
+      </p>
+      <p>
+        <u>Column descriptions:</u>
+      <ul>
+        <li><b>Name</b>: Name of the system or technology. </li>
+        <li><b>Publication</b>: Journal or conference of publication with publishing year. </li>
+        <li><b>NLP Library</b>: NLP libraries applied in the system. </li>
+        <li><b>Chart Type</b>: Various types of chart supported, including Bar(B), Table(Ta), Infographic(I),
+          Scatter(S), Radar(R), Line(L), Pie(P), Boxplot(Bo), Icon(Ic), Map(M), Heatmap(H), Timeline(Tl), Area(A),
+          Network(N), Tree(Tr), Strip(St), Donut(D), Gantt(G), Word clouds(Wc), Force graph(Fg), Range(Ra), Unit column
+          charts(Uc), and Graphics(Gr). </li>
+        <li><b>recommendation Algorithm</b>: Algorithm used for generating visualization recommendations. </li>
+        <li><b>Ambiguity Widget</b>: Whether to offer ambiguity widget for users. </li>
+        <li><b>Defaults for Underspecifition</b>: Whether to provide defaults for underspecified utterances.</li>
+        <li><b>Conversation</b>: Whether to support multi-turn conversation. </li>
+        <li><b>Autocompletion</b>: Whether to consider semantics of data columns.</li>
+        <li><b>Semantics Parsing</b>: Whether to support annotation on charts.</li>
+        <li><b>StoryTelling</b>: Whether to support story telling through infographic. </li>
+        <li><b>Annotation</b>: Whether to support autocompletion when users input NL.</li>
+        <li><b>Multimodel</b>: Whether to provide users with multimodal interfaces other than WIMP and NL, such as pen
+          and touch. </li>
+        <li><b>WIMP</b>: Whether to offer WIMP manipulations for users.</li>
+        <li><b>Multi-Recs</b>: Whether to generate multiple visualizations for a query.</li>
+        <li><b>Website</b>: Project website if opensourced.</li>
+      </ul>
+      </p>
+    </div>
+
+
+    <hr />
+    <div>
+      <p>
+        To evaluate the state-of-the-art open-source V-NLIs (FlowSense, NL4DV, Microsoft's Power BI and Tableau's Ask
+        Data), we defined a two-dimensional space that varies in task and information level for visualization-oriented
+        NLIs. At the task-level, we adopted the widely recognized ten low-level tasks (e.g., Characterize Distribution
+        andFind Extremum) proposed by Amar et al. As to information-level, human language is complex and can be divided
+        into vague and specific according to utterance information. Although the communication of information between
+        people is very smooth and unimpeded, whether itis vague or specific, it is very different for machines to parse
+        the two types of utterance. Based on the space, we designed a set of test cases in each scenario as shown in the
+        yellow-colored columns below.
+      </p>
+      <p>
+        The evaluation results are shown in pink-colored columns, bath generated visualizations and judged results. The
+        results can be divided into three catatories: (a) The system cannot parse the input query, and no result was
+        produced (marked as “-”); (b) The system can generate visualization but cannot meet the expected demand (marked
+        as “×”); (c) The generated visualization can correctly extract the target data attributes and well reflect the
+        user's analytic task (marked as “√”).
+      </p>
+      <h5><i class="fa fa-table"></i> Test cases and evaluation results (Click to <a
+          href="https://docs.google.com/spreadsheets/d/1EPZkPblZ6zCuuG2k1PIVAZFiSx2qUxIf_4drSmJudCQ/edit?usp=sharing"
+          target="blank">Google Sheet</a>)</h5>
+      <div style="width: 100%;height: 1000px;">
+        <iframe id="datasetPreview"
+          src="https://docs.google.com/spreadsheets/d/1EPZkPblZ6zCuuG2k1PIVAZFiSx2qUxIf_4drSmJudCQ/edit?usp=sharing&amp;single=true&amp;widget=true&amp;headers=false"
+          width="100%" height="100%"></iframe>
+      </div>
+      <p>
+        Column descriptions:
+      <ul>
+        <li><b>Task</b>: Ten low-level tasks of analytic activity in information visualization at task-level.</li>
+        <li><b>Dataset</b>: The dataset the designed queries are issued in the context of. The <a
+            href="https://github.com/InfoVis21/V-NLIs-survey/tree/master/Dataset" target="blank">ten datasets</a>
+          used during the evaluation can be found on the GitHub repository.</li>
+        <li><b>Query type</b>: Whether the query is specific or vague.</li>
+        <li><b>Query</b>: Query inputted to the systems.</li>
+        <li><b>Target attributes</b>: Data attributes that should be anaylyzed in the query.</li>
+        <li><b>Evaluation results titled by names of four state-of-the-art systems</b>: The <a
+            href="https://github.com/InfoVis21/V-NLIs-survey/tree/master/Evaluation%20vis" target="blank">generated
+            visualizations</a>
+          during the evaluation can be found on the GitHub repository. The mark types in the table above were finally
+          determined after discussion by multiple scholars. Fortunately, in general, these results were quite different
+          and easy to distinguish which is better. </li>
+      </ul>
+      </p>
+      <br>
+    </div>
+    <hr />
+    <div>
+      <h5>Available Datasets for V-NLIs</h5>
+      <li><b><a href="https://nlvcorpus.github.io/" target="blank">NLV</a></b>
+        <p>There is a lack of empirical understanding of how people specify visualizations through natural language.
+          Researchers of NLV conducted an online study (N = 102), showing participants a series of visualizations and
+          asking them to provide utterances they would pose to generate the displayed charts. From the responses, they
+          curated a dataset of 893 utterances and characterized the utterances according to (1) their phrasing (e.g.,
+          commands, queries, questions) and (2) the information they contained (e.g., chart types, data aggregations).
+        </p>
+      <li><b><a href="https://freenli.github.io/quda/" target="blank">Quda</a></b>
+        <p>Quda aims to help V-NLIs recognize analytic tasks from free-form natural language by training and evaluating
+          cutting-edge multi-label classification models. The dataset contains 14035 diverse user queries, and each is
+          annotated with one or multiple analytic tasks. Quda achieves this goal by first gathering seed queries with
+          data analysts and then employing extensive crowd force for paraphrase generation and validation. This work is
+          the first attempt to construct a large-scale corpus for recognizing analytic tasks.
+        </p>
+      <li><b><a href="https://github.com/dhkim16/VisQA-release" target="blank">VisQA</a></b>
+        <p>People often use charts to analyze data, answer questions and explain their answers to others. In a formative
+          study, Kim et al. found that such human-generated questions and explanations commonly refer to visual features
+          of charts. Based on this study, they developed an automatic chart question answering pipeline that generates
+          visual explanations describing how the answer was obtained. During the study, they showed people various
+          bar charts and line charts, and collected questions participants posed about the charts along with their
+          answers and explanations to those questions.
+        </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
