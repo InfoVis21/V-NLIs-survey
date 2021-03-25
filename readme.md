@@ -14,7 +14,6 @@ The materials include:
 
 
 ## Available Datasets for V-NLIs
----
 
 * [NLV](https://nlvcorpus.github.io/)
 
