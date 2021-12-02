@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>A Survey of Natural Language Interfaces for Data Visualization</title>
+  <title>Towards Natural Language Interfaces for Data Visualization</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -33,10 +33,10 @@
   <!-- Navigation -->
   <nav id="pageHeader" class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <h3>A Survey of Natural Language Interfaces for Data Visualization</h3>
-      <h5><a id="githubLink" href="https://github.com/InfoVis21/V-NLIs-survey"><i
+      <h3>Towards Natural Language Interfaces for Data Visualization</h3>
+      <!-- <h5><a id="githubLink" href="https://github.com/InfoVis21/V-NLIs-survey"><i
             class="fab fa-github"></i>GitHub</a>
-      </h5>
+      </h5> -->
     </div>
   </nav>
 
@@ -45,43 +45,38 @@
     <div class="row">
       <div class="col-md-12">
         <p>
-          Utilizing Visualization-oriented Natural Language Interfaces (V-NLIs) as a complementary input modality to
-          direct manipulation for visual analytics can provide an engaging user experience. It allows users to only
-          focus on the questions about data, rather than how to operate the interface to visualization tools. However,
-          designing practical V-NLIs is a challenging task due to the complex and ambiguous nature of human language,
-          the difficulty of maintaining context in conversational flow, the hardness to tell fascinating data stories,
-          and lack of discoverability. In the past two decades, leveraging advanced natural language processing
-          technologies, various V-NLIs have been developed both within academic research and commercial software,
-          especially in recent years. In this project, we conducted a comprehensive review of the existing V-NLIs. Based
-          on the field challenge type they deal with, we sorted out related works and analyzed their characteristics. In
-          addition, we designed a set of test cases for V-NLIs and evaluated four state-of-the-art systems to examine
-          whether we are ready to ask our data freely, along with discovering problems not found yet. Finally, we shed
-          light on several promising directions for future work in the community.
-
-
+          Utilizing Visualization-oriented Natural Language Interfaces (V-NLI) as a complementary input modality to direct manipulation for visual analytics can provide an engaging user experience. 
+          It enables users to focus on their tasks rather than worrying about operating the interface to visualization tools. 
+          In the past two decades, leveraging advanced natural language processing technologies, numerous V-NLI systems have been developed both within academic research and commercial software, especially in recent years. 
+          In our survey, we conduct a comprehensive review of the existing V-NLIs. 
+          In order to classify each paper, we develop categorical dimensions based on a classic information visualization pipeline with the extension of a V-NLI layer. The following seven stages are used: query interpretation, data transformation, visual mapping, view transformation, human interaction, dialogue management, and presentation.
+          Finally, we also shed light on several promising directions for future work in the community.
         </p>
-        <p>
+        <!-- <p>
           This website is a supplementary material for our paper, providing details of our survey and evaluation.
-        </p>
+        </p> -->
+        <!-- <OBJECT src="pipeline.pdf" type="application/pdf" width="100%" height="100%" internalinstanceid="81 /> -->
       </div>
+      <img src="pipeline.png" width="100%"/>
     </div>
 
     <hr />
     <div>
       <h5><i class="fa fa-table"></i> Survey (Click to <a
-          href="https://docs.google.com/spreadsheets/d/1GMWktNGJCwC8U1dvT0gMggVRRYqN3uL28zjVDbxYJOg/edit?usp=sharing"
+          href="https://docs.google.com/spreadsheets/d/1yfQpfd4kc84mrfIbHUSw92LWKRRMXQJ0vN2LTSnDVME/edit?usp=sharing"
           target="blank">Google Sheet</a>)</h5>
-      <div style="width: 100%;height: 600px;">
+      <p>
+        The table lists the details of related works, including NLP libraries applied in the system, chart types
+        supported, visualization recommendation algorithm adopted, and various characteristics in V-NLIs.
+      </p>
+      <div style="width: 100%;height: 800px;">
         <iframe id="datasetPreview"
-          src="https://docs.google.com/spreadsheets/d/1Y6yVs5HLq-V2egHIafGJMaUVnQSB385joDwgt9rID_M/edit?usp=sharing&amp;single=true&amp;widget=true&amp;headers=false"
+          src="https://docs.google.com/spreadsheets/d/1yfQpfd4kc84mrfIbHUSw92LWKRRMXQJ0vN2LTSnDVME/edit?usp=sharing&amp;single=true&amp;widget=true&amp;headers=false"
           width="100%" height="100%"></iframe>
       </div>
       <br>
-      <p>
-        The above table lists the details of related works, including NLP libraries applied in the system, chart types
-        supported, visualization recommendation algorithm adopted, and various characteristics in V-NLIs.
-      </p>
-      <p>
+
+      <!-- <p>
         <u>Column descriptions:</u>
       <ul>
         <li><b>Name</b>: Name of the system or technology. </li>
@@ -105,17 +100,102 @@
         <li><b>Multi-Recs</b>: Whether to generate multiple visualizations for a query.</li>
         <li><b>Website</b>: Project website if opensourced.</li>
       </ul>
-      </p>
+      </p> -->
     </div>
 
 
     <hr />
     <div>
+      <h5><i class="fa fa-table"></i> Available Datasets for V-NLIs</h5>
+
+      <table  border="1" align="center" width=100% >
+        <tr>
+            <td align="center"><b>Name</b></td>
+            <td align="center"><b>Publication</b></td>
+            <td align="center"><b>NL queries Num</b></td>
+            <td align="center"><b>Data tables Num</b></td>
+            <td align="center"><b>Benchmark</b></td>
+            <td align="center"><b>Other Contributions</b></td>
+            <td align="center"><b>Website</b></td>
+        </tr>
+        <tr>
+            <td align="center">VisQA</td>
+            <td align="center">CHI'20</td>
+            <td align="center">629</td>
+            <td align="center">52</td>
+            <td align="center">×</td>
+            <td align="center">VQA with explanations</td>
+            <td><a href="url">https://github.com/dhkim16/VisQA-release</a></td>
+        </tr>
+        <tr>
+            <td align="center">Quda</td>
+            <td align="center">arXiv'20</td>
+            <td align="center">14,035</td>
+            <td align="center">36</td>
+            <td align="center">×</td>
+            <td align="center">Three Quda applications</td>
+            <td><a href="url">https://freenli.github.io/quda/</a></td>
+        </tr>
+        <tr>
+            <td align="center">NLV</td>
+            <td align="center">CHI'21</td>
+            <td align="center">893</td>
+            <td align="center">3</td>
+            <td align="center">√</td>
+            <td align="center">Characterization of utterances</td>
+            <td><a href="url">https://nlvcorpus.github.io/</a></td>
+        </tr>
+        <tr>
+            <td align="center">nvBench</td>
+            <td align="center">SIGMOD'21</td>
+            <td align="center">25,750</td>
+            <td align="center">780</td>
+            <td align="center">√</td>
+            <td align="center">NL2SQL-to-NL2VIS and SEQ2VIS</td>
+            <td><a href="url">https://github.com/TsinghuaDatabaseGroup/nvBench</a></td>
+        </tr>
+      </table>
+
+
+
+      <li><b><a href="https://github.com/TsinghuaDatabaseGroup/nvBench" target="blank">nvBench</a></b>
+        <p>nvBench is a large dataset for complex and cross-domain NL2VIS task, which covers 105 domains, supports seven common types of visualizations, and contains 25,750 (NL, VIS) pairs. This repository contains the corpus of NL2VIS, with JSON format and Vega-Lite format.
+        </p>
+      <li><b><a href="https://nlvcorpus.github.io/" target="blank">NLV</a></b>
+        <p>There is a lack of empirical understanding of how people specify visualizations through natural language.
+          Researchers of NLV conducted an online study (N = 102), showing participants a series of visualizations and
+          asking them to provide utterances they would pose to generate the displayed charts. From the responses, they
+          curated a dataset of 893 utterances and characterized the utterances according to (1) their phrasing (e.g.,
+          commands, queries, questions) and (2) the information they contained (e.g., chart types, data aggregations).
+        </p>
+      <li><b><a href="https://freenli.github.io/quda/" target="blank">Quda</a></b>
+        <p>Quda aims to help V-NLIs recognize analytic tasks from free-form natural language by training and evaluating
+          cutting-edge multi-label classification models. The dataset contains 14035 diverse user queries, and each is
+          annotated with one or multiple analytic tasks. Quda achieves this goal by first gathering seed queries with
+          data analysts and then employing extensive crowd force for paraphrase generation and validation. This work is
+          the first attempt to construct a large-scale corpus for recognizing analytic tasks.
+        </p>
+      <li><b><a href="https://github.com/dhkim16/VisQA-release" target="blank">VisQA</a></b>
+        <p>People often use charts to analyze data, answer questions and explain their answers to others. In a formative
+          study, Kim et al. found that such human-generated questions and explanations commonly refer to visual features
+          of charts. Based on this study, they developed an automatic chart question answering pipeline that generates
+          visual explanations describing how the answer was obtained. During the study, they showed people various
+          bar charts and line charts, and collected questions participants posed about the charts along with their
+          answers and explanations to those questions.
+        </p>
+    </div>
+
+
+    <hr />
+    <div>
+      <h5><i class="fa fa-table"></i> Test cases and evaluation results (Click to <a
+          href="https://docs.google.com/spreadsheets/d/1EPZkPblZ6zCuuG2k1PIVAZFiSx2qUxIf_4drSmJudCQ/edit?usp=sharing"
+          target="blank">Google Sheet</a>)</h5>
       <p>
         To evaluate the state-of-the-art open-source V-NLIs (FlowSense, NL4DV, Microsoft's Power BI and Tableau's Ask
         Data), we defined a two-dimensional space that varies in task and information level for visualization-oriented
         NLIs. At the task-level, we adopted the widely recognized ten low-level tasks (e.g., Characterize Distribution
-        andFind Extremum) proposed by Amar et al. As to information-level, human language is complex and can be divided
+        and Find Extremum) proposed by Amar et al. As to information-level, human language is complex and can be divided
         into vague and specific according to utterance information. Although the communication of information between
         people is very smooth and unimpeded, whether itis vague or specific, it is very different for machines to parse
         the two types of utterance. Based on the space, we designed a set of test cases in each scenario as shown in the
@@ -128,9 +208,6 @@
         as “×”); (c) The generated visualization can correctly extract the target data attributes and well reflect the
         user's analytic task (marked as “√”).
       </p>
-      <h5><i class="fa fa-table"></i> Test cases and evaluation results (Click to <a
-          href="https://docs.google.com/spreadsheets/d/1EPZkPblZ6zCuuG2k1PIVAZFiSx2qUxIf_4drSmJudCQ/edit?usp=sharing"
-          target="blank">Google Sheet</a>)</h5>
       <div style="width: 100%;height: 1000px;">
         <iframe id="datasetPreview"
           src="https://docs.google.com/spreadsheets/d/1EPZkPblZ6zCuuG2k1PIVAZFiSx2qUxIf_4drSmJudCQ/edit?usp=sharing&amp;single=true&amp;widget=true&amp;headers=false"
@@ -156,32 +233,10 @@
       </p>
       <br>
     </div>
+
     <hr />
-    <div>
-      <h5>Available Datasets for V-NLIs</h5>
-      <li><b><a href="https://nlvcorpus.github.io/" target="blank">NLV</a></b>
-        <p>There is a lack of empirical understanding of how people specify visualizations through natural language.
-          Researchers of NLV conducted an online study (N = 102), showing participants a series of visualizations and
-          asking them to provide utterances they would pose to generate the displayed charts. From the responses, they
-          curated a dataset of 893 utterances and characterized the utterances according to (1) their phrasing (e.g.,
-          commands, queries, questions) and (2) the information they contained (e.g., chart types, data aggregations).
-        </p>
-      <li><b><a href="https://freenli.github.io/quda/" target="blank">Quda</a></b>
-        <p>Quda aims to help V-NLIs recognize analytic tasks from free-form natural language by training and evaluating
-          cutting-edge multi-label classification models. The dataset contains 14035 diverse user queries, and each is
-          annotated with one or multiple analytic tasks. Quda achieves this goal by first gathering seed queries with
-          data analysts and then employing extensive crowd force for paraphrase generation and validation. This work is
-          the first attempt to construct a large-scale corpus for recognizing analytic tasks.
-        </p>
-      <li><b><a href="https://github.com/dhkim16/VisQA-release" target="blank">VisQA</a></b>
-        <p>People often use charts to analyze data, answer questions and explain their answers to others. In a formative
-          study, Kim et al. found that such human-generated questions and explanations commonly refer to visual features
-          of charts. Based on this study, they developed an automatic chart question answering pipeline that generates
-          visual explanations describing how the answer was obtained. During the study, they showed people various
-          bar charts and line charts, and collected questions participants posed about the charts along with their
-          answers and explanations to those questions.
-        </p>
-    </div>
+
+
   </div>
 
 </body>
