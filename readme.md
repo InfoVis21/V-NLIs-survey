@@ -7,23 +7,6 @@ The materials include:
 
 |                          | Description                                                                                                                   | File                                    |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| Survey                   | Survey of related works.                                                                                                      | ```./Survey.xlsx```                     |
 | Dataset                  | Dataset for evluating existing V-NLIs.                                                                                        | ```./Dataset/*.csv```                   |
 | Test cases and results   | Test cases and judged evaluation results.                                                                                     | ```./Test_cases_and_results.xlsx```     |
 | Evaluation_visualization | Visualizations generated in the evaluation, files are named as task_system_query type.png such as Cluster_NL4DV_specific.png. | ```./Evaluation vis/*.png``` |
-
-
-## Available Datasets for V-NLIs
-
-* [NLV](https://nlvcorpus.github.io/)
-
-There is a lack of empirical understanding of how people specify visualizations through natural language. Researchers of NLV conducted an online study (N = 102), showing participants a series of visualizations and asking them to provide utterances they would pose to generate the displayed charts. From the responses, they curated a dataset of 893 utterances and characterized the utterances according to (1) their phrasing (e.g., commands, queries, questions) and (2) the information they contained (e.g., chart types, data aggregations). 
-
-* [Quda](https://freenli.github.io/quda/)
-
-Quda aims to help V-NLIs recognize analytic tasks from free-form natural language by training and evaluating cutting-edge multi-label classification models. The dataset contains 14035 diverse user queries, and each is annotated with one or multiple analytic tasks. Quda achieves this goal by first gathering seed queries with data analysts and then employing extensive crowd force for paraphrase generation and validation. This work is the first attempt to construct a large-scale corpus for recognizing analytic tasks.
-
-* [VisQA](https://github.com/dhkim16/VisQA-release)
-
-People often use charts to analyze data, answer questions and explain their answers to others. In a formative study, Kim et al. found that such human-generated questions and explanations commonly refer to visual features of charts. Based on this study, they developed an automatic chart question answering pipeline that generates
-visual explanations describing how the answer was obtained. During the study, they showed people various bar charts and line charts, and collected questions participants posed about the charts along with their answers and explanations to those questions.
