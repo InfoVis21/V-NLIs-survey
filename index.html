@@ -51,8 +51,8 @@
           It enables users to focus on their tasks rather than worrying about operating the interface to visualization tools. 
           In the past two decades, leveraging advanced natural language processing technologies, numerous V-NLI systems have been developed both within academic research and commercial software, especially in recent years. 
           In our survey, we conduct a comprehensive review of the existing V-NLIs. 
-          In order to classify each paper, we develop categorical dimensions based on a classic information visualization pipeline with the extension of a V-NLI layer. The following seven stages are used: query interpretation, data transformation, visual mapping, view transformation, human interaction, dialogue management, and presentation.
-          Finally, we also shed light on several promising directions for future work in the community.
+          In order to classify each paper, we develop categorical dimensions based on a classic information visualization pipeline with the extension of a V-NLI layer as shown in the figure. The following seven stages are used: query interpretation, data transformation, visual mapping, view transformation, human interaction, dialogue management, and presentation.
+          This website includes the survey of existing systems, available datasets, and our evaluation results.
         </p>
         <!-- <p>
           This website is a supplementary material for our paper, providing details of our survey and evaluation.
@@ -198,15 +198,15 @@
       <p>
         To evaluate the state-of-the-art open-source V-NLIs (FlowSense, NL4DV, Microsoft's Power BI and Tableau's Ask
         Data), we defined a two-dimensional space that varies in task and information level for visualization-oriented
-        NLIs. At the task-level, we adopted the widely recognized ten low-level tasks (e.g., Characterize Distribution
-        and Find Extremum) proposed by Amar et al. As to information-level, human language is complex and can be divided
+        NLIs. At task-level, we adopted the widely recognized ten low-level tasks (e.g., Characterize Distribution
+        and Find Extremum) proposed by Amar et al. At information-level, human language is complex and can be divided
         into vague and specific according to utterance information. Although the communication of information between
         people is very smooth and unimpeded, whether itis vague or specific, it is very different for machines to parse
         the two types of utterance. Based on the space, we designed a set of test cases in each scenario as shown in the
         yellow-colored columns below.
       </p>
       <p>
-        The evaluation results are shown in pink-colored columns, bath generated visualizations and judged results. The
+        The evaluation results are shown in pink-colored columns, both generated visualizations and judged results. The
         results can be divided into three catatories: (a) The system cannot parse the input query, and no result was
         produced (marked as “-”); (b) The system can generate visualization but cannot meet the expected demand (marked
         as “×”); (c) The generated visualization can correctly extract the target data attributes and well reflect the
@@ -226,7 +226,7 @@
           used during the evaluation can be found on the GitHub repository.</li>
         <li><b>Query type</b>: Whether the query is specific or vague.</li>
         <li><b>Query</b>: Query inputted to the systems.</li>
-        <li><b>Target attributes</b>: Data attributes that should be anaylyzed in the query.</li>
+        <li><b>Target attributes</b>: Data attributes that should be analyzed in the query.</li>
         <li><b>Evaluation results titled by names of four state-of-the-art systems</b>: The <a
             href="https://github.com/InfoVis21/V-NLIs-survey/tree/master/Evaluation%20vis" target="blank">generated
             visualizations</a>
